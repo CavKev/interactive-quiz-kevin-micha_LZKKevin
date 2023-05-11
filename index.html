@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-    content="IE=edge">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-    <title> Register Page
-    </title>
-    <link rel='stylesheet' href="/css/main.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="/bilder/VW_logo_white.png">
-
+  <head name="Servus">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/bilder/VW_logo_white.png" />
   </head>
 
-<body>
-
-
-    <div class="background"> </div>
+  <body>
+    <div class="background"></div>
 
     <div class="container">
       <div class="content">
-
-        <img class="vw-logo-white" src="Bilder/VW_logo_white.png" >
+        <img class="vw-logo-white" src="Bilder/VW_logo_white.png" />
 
         <div class="text-welcome">
-          <h2 class="title">Interactive <span class="title-span">ID.7 Quiz</span><br><span> 
-          </span></h2>
+          <h2 class="title">
+            Interactive <span class="title-span">ID.7 Quiz</span><br /><span>
+            </span>
+          </h2>
 
-          <p class="links-beschreibung">Get ready for the brandnew ID.7. The ID.7 will represent the technical optimum of Volkswagen's electric range. A claim that seems justified not only by a considerable reach.
+          <p class="links-beschreibung">
+            Get ready for the brandnew ID.7. The ID.7 will represent the
+            technical optimum of Volkswagen's electric range. A claim that seems
+            justified not only by a considerable reach.
           </p>
 
           <div class="social-icons">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -46,33 +46,30 @@
           <form id="form" action="quiz.html">
             <h2 class="title_right">Get ready for the ID.7</h2>
 
-            <div class="input-box"> <!-- Daten eingeben -->
-              <span class="icon"><i class='bx bxs-user-circle' ></i></span>
-              <input type="text" required id="surname">
+            <div class="input-box">
+              <!-- Daten eingeben -->
+              <span class="icon"><i class="bx bxs-user-circle"></i></span>
+              <input type="text" required id="surname" />
               <label class="nickname">Surname</label>
-              
             </div>
 
             <div class="input-box">
-              <span class="icon"><i class='bx bxs-envelope' ></i></span>
-              <input type="text" required id="name">
+              <span class="icon"><i class="bx bxs-envelope"></i></span>
+              <input type="text" required id="name" />
               <label class="email">Name</label>
-              
             </div>
 
-            <button class="button" onclick="generatepdf()" type="submit">Quiz starten</button>
-            
+            <button class="button" onclick="generatepdf()" type="submit">
+              Quiz starten
+            </button>
+
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
             <script src="/js/create_pdf.js"></script>
             <script src="/js/input_validierung.js"></script>
             <script src="/js/script.js"></script>
-            
           </form>
         </div>
       </div>
     </div>
-    
-
-
-</body>
+  </body>
 </html>
